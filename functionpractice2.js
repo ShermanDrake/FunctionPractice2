@@ -5,7 +5,7 @@
 // 	}
 
 
-// var value = getValue({name: 'Luisa', age: 25, city: 'Boulder'}, 'name') 
+// var value = getValue({name: 'Luisa', age: 25, city: 'Boulder'}, 'city') 
 
 // console.log(value)
 
@@ -56,21 +56,38 @@
 
 
 
-var negativeIndex = function(indexArray) {
+// var negativeIndex = function(indexArray, num) {
+
+// 	var count = 0
+
+// 	indexArray.forEach(function(){
+
+// 	count = indexArray[indexArray.length + num]
+	
+	
+// 	})
+
+// 		return count
+// }
+
+// console.log(negativeIndex(['a', 'b', 'c', 'd', 'e'], -2))
+// console.log(negativeIndex(['jerry', 'sarah', 'sally'], -1))
+
+
+
+
+var removeM = function(mArray) {
 
 	var count = 0
 
-	indexArray.forEach(function(string){
-		count += word.length 
+	mArray.forEach(function(word){
+	count = word.removeM
 
-	})
-
-	
-		return count
+	return count
 }
 
-console.log(negativeIndex(['a', 'b', 'c', 'd', 'e'], -2))
-console.log(negativeIndex(['jerry', 'sarah', 'sally'], -1))
+console.log(removeM ('family'))
+console.log(removeM ('memory'))
 
 
 
