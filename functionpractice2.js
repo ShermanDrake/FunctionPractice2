@@ -76,18 +76,110 @@
 
 
 
-var removeM = function(mArray) {
+// var removeM = function(str) {
 
-	var count = 0
+// var arr = str.split('')
+// for (var i = 0; i < arr.length; i++){
+// 		if(arr[i] === 'm')
+// 			arr[i] = ''
+// 	}
+// 	return arr.join('')
+// }
 
-	mArray.forEach(function(word){
-	count = word.removeM
+// console.log(removeM ('family'))
+// console.log(removeM ('memory'))
 
-	return count
+
+
+// var printObject = function(object) {
+
+// 	for (var key in object) {
+// 		console.log(key + ' is ' + object[key])
+// 	}
+// }
+
+// 	printObject({ a: 10, b: 20, c: 30 })
+// 	printObject({ firstName: 'pork', lastName: 'chops' })
+
+
+// var vowels = function(str) {
+
+// 	var vowels = []
+// 	var arr = str.split('')
+// 	for (var i = 0; i < arr.length; i++){
+// 		if(arr[i] === 'a' || arr[i] === 'e' || arr[i] === 'i' || arr[i] === 'o' || arr[i] === 'u') {
+// 			vowels.push(arr[i])
+// 		}
+
+// 	}
+// 	return vowels
+// }
+
+// console.log(vowels('alabama'))
+// console.log(vowels('What evil odd ducks!'))
+
+
+
+// var twins = function(arr) {
+
+// 	for (var i = 0; i < arr.length; i++) {
+// 		if (arr[i] === arr[i+1]) {
+// 			i++
+// 		}
+// 		else {
+// 			return false
+// 		}
+// 	}
+	
+// 	return true
+// }
+
+// console.log(twins(['a', 'a', 'b', 'b', 'c', 'c']))
+// console.log(twins(['a', 'a', 'b', 'c', 'd', 'd']))
+// console.log(twins(['a', 'a', 'b', 'z']))
+// console.log(twins(['a', 'a', undefined]))
+
+
+
+// var or = function(arr) {
+
+// 	if (arr.length === 0) {
+// 		return false
+// 	} else if (arr.length > 0){
+// 		for (var i = 0; i < arr.length; i++) {
+// 			if (arr[i] === true) {
+// 				return true
+// 			}
+// 			else if(i === arr.length-1){
+// 				return false
+			
+// 			}
+// 		}
+// 	}
+
+// }
+
+
+// console.log(or([false, false, true, false]))
+// console.log(or([false, false, false]))
+// console.log(or([]))
+
+
+
+function unique(arr) {
+   var u = {}, a = []
+   for(var i = 0; i < arr.length; ++i){
+      if(u.hasOwnProperty(arr[i])) {
+         // using continue will jump over one iteration
+         continue;
+      }
+      a.push(arr[i]);
+      u[arr[i]] = 1;
+   }
+   return a
 }
-
-console.log(removeM ('family'))
-console.log(removeM ('memory'))
+unique (['a', 'b', 'a', 'c', 'd', 'd'])
+unique (['todd', 'avery', 'maria', 'avery'])
 
 
 
